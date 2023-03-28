@@ -1,1 +1,3 @@
-## Flash card application
+## Twitter application
+
+Coded in python, TKInter and SQLite
