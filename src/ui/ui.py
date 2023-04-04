@@ -1,4 +1,5 @@
 from tkinter import Tk, ttk, W
+from services.user_service import UserService
 
 class UI:
     def __init__(self, root):
@@ -6,13 +7,23 @@ class UI:
    
 
     def handle_button_click(self,event):
-        print("button clicked", event)
-        
         name = self.name.get()
         username= self.username.get()
         password = self.password.get()
 
-        print(name, username, password)
+
+        instance = UserService()
+        instance.create_user(name,username,password)
+        instance.return_users()
+        
+        
+        # check if user exists (username already exists)
+
+        #if username not exists --> create user
+        
+    def return_users(self):
+        for i in self.users:
+            print(i)
 
 
 

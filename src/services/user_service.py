@@ -2,17 +2,19 @@ from entities.user import User
 
 
 class UserService:
-    def __init__(self, id):
+    def __init__(self, id=None):
         self.id = id
         self.users = []
 
     def create_user(self, name, username, password):
-        pass
+        self.users.append(User(name,username,password,None,False))
         # check if user exists (username already exists)
 
         #if username not exists --> create user
         
-
+    def return_users(self):
+        for i in self.users:
+            print(i.name, i.username, i.password)
     
     def login(self, username=None, password=None):
         # check if username and password match 
