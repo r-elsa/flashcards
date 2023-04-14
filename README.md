@@ -54,3 +54,14 @@ poetry run invoke test
 poetry run invoke coverage-report
 ```
 
+### Format code 
+
+```bash
+poetry run invoke format
+```
+
+### Code quality test (pylint)
+
+```bash
+poetry run invoke lint
+```
