@@ -6,9 +6,6 @@ class Tweet:
         self.id = tweet_id or str(uuid.uuid4())
         self.user = user
         self.send_time = send_time
-        self.message =message
-        self.picture_url= picture_url
-        self.picture_textfield= picture_textfield
-
-
-
+        self.message = message
+        self.picture_url = picture_url
+        self.picture_textfield = picture_textfield

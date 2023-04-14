@@ -8,8 +8,3 @@ class TweetService:
 
     def create_tweet(Invoice):
         pass
-
-    
-
-
-
